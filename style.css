@@ -33,11 +33,12 @@ body{
 }
 
 .inside-in{
-  width: 90%;
+  width: 85%;
   border: none;
   text-align: right;
   background-color: gray;
   padding: 0px 5px;
+  font-family: serif;
 }
 
 .inside-input1{
@@ -83,6 +84,9 @@ body{
   cursor: pointer;
 }
 
+.inside-in:hover {
+  cursor: pointer;
+}
 
 
 
