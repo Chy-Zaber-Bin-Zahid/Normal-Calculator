@@ -1,0 +1,164 @@
+html{
+  height: 100%;
+}
+
+body{
+  height: 100%;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(103, 170, 103);
+}
+
+.cal-body{
+  width: 200px;
+  height: 300px;
+  max-width: 200px;
+  max-height: 300px;
+  display: inline-block;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 7px;
+  background-color: rgb(73, 67, 67);
+  display: flex;
+  flex-direction: column;
+}
+
+.input{
+ height: 20%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.inside-in{
+  width: 90%;
+  border: none;
+  text-align: right;
+  background-color: gray;
+  padding: 0px 5px;
+}
+
+.inside-input1{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.inside-input2{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.btn-all{
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button{
+  width: 95%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.buttons{
+  width: 20%;
+  height: 75%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-family: serif;
+}
+
+.buttons:hover {
+  background-color: rgb(93, 197, 197);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* html,
+body {
+  height: 100%;
+}
+
+.container {
+  background-image: linear-gradient(234deg, lightgreen, lightyellow);
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cal-body {
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  width: 30vh;
+  height: 45vh;
+  background-color: rgb(37, 35, 30);
+}
+
+.cal-body .input {
+  margin-top: 30px;
+  width: 90%;
+  margin: auto;
+}
+
+.inside-input {
+  text-align: right;
+  height: 30px;
+  background-color: gray;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.cal-body .button {
+  margin-top: 20px;
+  justify-content: center;
+  height: 250px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 50px);
+}
+
+.cal-body .buttons {
+  color: black;
+  font-size: 15px;
+  border-radius: 50%;
+  border: 2px solid lightcoral;
+}
+
+.cal-body .buttons:hover {
+  background-color: aqua;
+  cursor: pointer;
+  border: 2px solid lime;
+} */
