@@ -17,29 +17,60 @@ function operation(opa) {
   //(+)
   if (store.includes("+")) {
     temp = store.split("+");
-    inputFirst.value = store;
-    inputSecond.value = parseFloat(temp[0]) + parseFloat(temp[1]);
-    temp = [];
-    store = "";
+    console.log(temp);
+    if (temp.length === 2) {
+      inputFirst.value = store;
+      inputSecond.value = parseFloat(temp[0]) + parseFloat(temp[1]);
+      temp = [];
+      store = "";
+    } else if (temp[0] === "" && temp.length === 3) {
+      inputFirst.value = store;
+      inputSecond.value = parseFloat(temp[1]) + parseFloat(temp[2]);
+      temp = [];
+      store = "";
+    } else if (temp[temp.length - 1] === "") {
+      inputFirst.value = "Syntax ERROR";
+      store = "";
+      inputSecond.value = "";
+    } else if (
+      (temp[0] === "" && temp.length > 3) ||
+      (temp[0] !== "" && temp.length >= 3)
+    ) {
+      inputFirst.value = "Only two digit for now!";
+      inputSecond.value = "";
+      store = "";
+    }
   }
 
   //(-)
   if (store.includes("-")) {
     let temp2 = "";
     temp2 = store.indexOf("-");
+    temp = store.split("-");
     if (temp2 !== 0) {
-      temp = store.split("-");
       inputFirst.value = store;
       inputSecond.value = parseFloat(temp[0]) - parseFloat(temp[1]);
       temp = [];
       store = "";
+    } else if (
+      (temp[0] === "" && temp.length > 3) ||
+      (temp[0] !== "" && temp.length >= 3)
+    ) {
+      inputFirst.value = "Only two digit for now!";
+      inputSecond.value = "";
+      store = "";
     } else {
-      temp = store.split("-");
       inputFirst.value = store;
-      console.log(temp);
       inputSecond.value = -1 * parseFloat(temp[1]) - parseFloat(temp[2]);
       temp = [];
       store = "";
+    }
+  }
+
+  //(*)
+  if (store.includes("*")) {
+    if (store[0] === "*") {
+      console.log("hui");
     }
   }
 }
