@@ -11,6 +11,21 @@ body{
   background-color: rgb(103, 170, 103);
 }
 
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.heading{
+  font-size: 16px;
+  color: lightskyblue;
+}
+
+.heading :hover{
+  color: blueviolet;
+  cursor: not-allowed;
+}
+
 .cal-body{
   width: 200px;
   height: 300px;
@@ -22,6 +37,7 @@ body{
   background-color: rgb(73, 67, 67);
   display: flex;
   flex-direction: column;
+  box-shadow: 5px 5px 20px rgb(39, 39, 39);
 }
 
 .input{
@@ -87,82 +103,3 @@ body{
 .inside-in:hover {
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* html,
-body {
-  height: 100%;
-}
-
-.container {
-  background-image: linear-gradient(234deg, lightgreen, lightyellow);
-  margin: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.cal-body {
-  border: 1px solid black;
-  border-radius: 10px;
-  text-align: center;
-  width: 30vh;
-  height: 45vh;
-  background-color: rgb(37, 35, 30);
-}
-
-.cal-body .input {
-  margin-top: 30px;
-  width: 90%;
-  margin: auto;
-}
-
-.inside-input {
-  text-align: right;
-  height: 30px;
-  background-color: gray;
-  border: 2px solid black;
-  border-radius: 5px;
-}
-
-.cal-body .button {
-  margin-top: 20px;
-  justify-content: center;
-  height: 250px;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(4, 50px);
-}
-
-.cal-body .buttons {
-  color: black;
-  font-size: 15px;
-  border-radius: 50%;
-  border: 2px solid lightcoral;
-}
-
-.cal-body .buttons:hover {
-  background-color: aqua;
-  cursor: pointer;
-  border: 2px solid lime;
-} */

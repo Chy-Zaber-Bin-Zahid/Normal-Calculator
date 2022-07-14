@@ -6,46 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
   </head>
   <body class="container">
+    <div class="heading">
+      <h1>Two Digit Simple Calculator</h1>
+    </div>
     <div class="cal-body">
       <div class="input">
-        <input class="inside-in inside-input1" type="text" />
-        <input class="inside-in inside-input2" type="text" />
+        <input type="text" id="input1" class="inside-in inside-input1" type="text" />
+        <input type="text" id="input2" class="inside-in inside-input2" type="text" />
       </div>
       <div class="btn-all">
         <div class="button">
-          <button class="buttons">1</button>
-          <button class="buttons">2</button>
-          <button class="buttons">3</button>
-          <button class="buttons">/</button>
+          <button id="btn-1" class="buttons">1</button>
+          <button id="btn-2" class="buttons">2</button>
+          <button id="btn-3" class="buttons">3</button>
+          <button id="btn-/" class="buttons">/</button>
         </div>
         <div class="button">
-          <button class="buttons">4</button>
-          <button class="buttons">5</button>
-          <button class="buttons">6</button>
-          <button class="buttons">*</button>
+          <button id="btn-4" class="buttons">4</button>
+          <button id="btn-5" class="buttons">5</button>
+          <button id="btn-6" class="buttons">6</button>
+          <button id="btn-*" class="buttons">*</button>
         </div>
         <div class="button">
-          <button class="buttons">7</button>
-          <button class="buttons">8</button>
-          <button class="buttons">9</button>
-          <button class="buttons">+</button>
+          <button id="btn-7" class="buttons">7</button>
+          <button id="btn-8" class="buttons">8</button>
+          <button id="btn-9" class="buttons">9</button>
+          <button id="btn-+" class="buttons">+</button>
         </div>
         <div class="button">
-          <button class="buttons">0</button>
-          <button class="buttons">.</button>
-          <button class="buttons">%</button>
-          <button class="buttons">-</button>
+          <button id="btn-0" class="buttons">0</button>
+          <button id="btn-." class="buttons">.</button>
+          <button id="btn-%" class="buttons">%</button>
+          <button id="btn--" class="buttons">-</button>
         </div>
         <div class="button">
-          <button class="buttons">x^2</button>
-          <button class="buttons">DEL</button>
-          <button class="buttons">AC</button>
-          <button class="buttons">=</button>
+          <button id="btn-x^2" class="buttons">x^2</button>
+          <button id="btn-DEL" class="buttons">DEL</button>
+          <button id="btn-AC" class="buttons">AC</button>
+          <button id="btn-=" class="buttons">=</button>
         </div>
       </div>
       </div>
+
+      <script src="script.js"></script>
   </body>
 </html>
