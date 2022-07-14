@@ -1,8 +1,8 @@
-html{
+html {
   height: 100%;
 }
 
-body{
+body {
   height: 100%;
   margin: 0px;
   display: flex;
@@ -11,12 +11,14 @@ body{
   background-color: rgb(103, 170, 103);
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.heading{
+.heading {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,12 +26,12 @@ body{
   color: lightskyblue;
 }
 
-.heading :hover{
+.heading :hover {
   color: blueviolet;
   cursor: not-allowed;
 }
 
-.cal-body{
+.cal-body {
   width: 200px;
   height: 300px;
   max-width: 200px;
@@ -43,15 +45,15 @@ body{
   box-shadow: 5px 5px 20px rgb(39, 39, 39);
 }
 
-.input{
- height: 20%;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
+.input {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.inside-in{
+.inside-in {
   width: 85%;
   border: none;
   text-align: right;
@@ -60,17 +62,17 @@ body{
   font-family: serif;
 }
 
-.inside-input1{
+.inside-input1 {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
-.inside-input2{
+.inside-input2 {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
-.btn-all{
+.btn-all {
   height: 80%;
   display: flex;
   flex-direction: column;
@@ -78,7 +80,7 @@ body{
   align-items: center;
 }
 
-.button{
+.button {
   width: 95%;
   height: 100%;
   display: flex;
@@ -87,7 +89,7 @@ body{
   justify-content: space-evenly;
 }
 
-.buttons{
+.buttons {
   width: 20%;
   height: 75%;
   border-radius: 50%;
