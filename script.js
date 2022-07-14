@@ -69,10 +69,75 @@ function operation(opa) {
 
   //(*)
   if (store.includes("*")) {
+    let temp3 = store.indexOf("*");
     if (store[0] === "*") {
-      console.log("hui");
+      inputFirst.value = "Syntax ERROR";
+      inputSecond.value = "";
+      store = "";
+      temp3 = 0;
+    } else {
+      temp = store.split("*");
+      inputSecond.value = temp[0] * temp[1];
+      inputFirst.value = store;
+      store = "";
     }
   }
+
+  //(/)
+  if (store.includes("/")) {
+    let temp3 = store.indexOf("/");
+    if (store[0] === "/") {
+      inputFirst.value = "Syntax ERROR";
+      inputSecond.value = "";
+      store = "";
+      temp3 = 0;
+    } else {
+      temp = store.split("/");
+      inputSecond.value = temp[0] / temp[1];
+      inputFirst.value = store;
+      store = "";
+    }
+  }
+
+  //(%)
+  if (store.includes("%")) {
+    let temp3 = store.indexOf("%");
+    if (store[0] === "%") {
+      inputFirst.value = "Syntax ERROR";
+      inputSecond.value = "";
+      store = "";
+      temp3 = 0;
+    } else {
+      temp = store.split("%");
+      inputSecond.value = temp[0] % temp[1];
+      inputFirst.value = store;
+      store = "";
+    }
+  }
+}
+
+//clear all (AC)
+function clearAll(ac) {
+  document.getElementById(ac).addEventListener("click", function () {
+    inputFirst.value = "";
+    inputSecond.value = "0.00";
+    store = "";
+  });
+}
+
+//clear one by one (DEL)
+function clearOneByOne(del) {
+  document.getElementById(del).addEventListener("click", function () {
+    if (inputFirst.value === "") {
+      store = store.slice(0, store.length - 1);
+      inputFirst.value = "";
+      inputSecond.value = store;
+    } else {
+      inputFirst.value = "";
+      inputSecond.value = "0.00";
+      store = "";
+    }
+  });
 }
 
 function storeNumber(num, idx = 0) {
@@ -142,3 +207,9 @@ buttons("btn-%");
 
 //(=)
 buttons("btn-=");
+
+//(AC)
+clearAll("btn-AC");
+
+//(DEL)
+clearOneByOne("btn-DEL");
